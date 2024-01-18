@@ -12,6 +12,7 @@ const Login = () => {
 
   const handleLogin = () => {
     console.log("Logging in with:", email, password);
+    navigate('/');
   };
 
   const onSuccess = (res) => {
@@ -50,7 +51,7 @@ const Login = () => {
             Sign up.
           </span>
         </p>
-        <div className="flex mt-4 mb-4">
+        <div className="md:flex mt-4 mb-4">
           <div className="mr-2">
             <label>Email</label>
             <input
@@ -62,7 +63,7 @@ const Login = () => {
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
             />
           </div>
-          <div className="ml-2">
+          <div className="md:ml-2">
             <label>Password</label>
             <input
               required
