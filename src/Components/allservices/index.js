@@ -14,7 +14,7 @@ const Allservices = () => {
           wisdom.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 mt-6 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6 gap-4">
         {service.map((arr, fkey) => (
           <div
             className="relative hover:scale-105 transition-transform min-w-8 min-h-60"
