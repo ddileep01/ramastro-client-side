@@ -1,6 +1,7 @@
 import Login from './Components/login'; 
 import SignUp from './Components/signup';
 import Home from './Components/home';
+import Allservices from './Components/allservices';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BookingForm from './Components/bookingForm';
 import './App.css';
@@ -24,8 +25,9 @@ function App() {
     <Router>
       <Routes>
       <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+      <Route path="/allservices" element={<Allservices/>}/>
+      {/* <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} /> */}
         <Route path="/booknow" element={<BookingForm />} />
       </Routes>
     </Router>
