@@ -4,6 +4,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../Navbar/index.js";
 
+const animations = [
+  `fade-up`,
+  `fade-down`,
+  `fade-left`,
+  `fade-right`,
+  `fade-up-right`,
+  `fade-up-left`,
+  `fade-down-right`,
+  `fade-down-left`,
+  `zoom-in`,
+  `zoom-in-up`,
+  `zoom-in-down`,
+  `zoom-in-left`,
+  `zoom-in-right`,
+  `zoom-out`,
+  `zoom-out-up`,
+  `zoom-out-down`,
+  `zoom-out-left`,
+  `zoom-out-right`,
+  `slide-up`,
+  `slide-down`,
+  `slide-right`,
+  `slide-left`,
+  `flip-left`,
+  `flip-right`,
+  `flip-up`,
+  `flip-down`,
+];
+
 const Home = () => {
   const carouselSettings = {
     dots: true,
@@ -124,7 +153,7 @@ const Home = () => {
           alt="welcome"
           className="h-40 md:mt-4 md:mr-16"
         />
-        <div className="md:w-1/2">
+        <div className="md:w-1/2" data-aos="fade-up" data-aos-delay="200">
           <h1 className="text-xl md:text-2xl text-white font-bold mb-4">
             Enlightening Vedic Astrology Readings
           </h1>
