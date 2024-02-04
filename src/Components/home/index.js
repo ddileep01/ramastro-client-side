@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -43,6 +44,7 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  const navigate = useNavigate();
 
   const [cards] = useState([
     {
@@ -105,6 +107,10 @@ const Home = () => {
         "I wanted to marry a girl of my choice but our gun Milan came less than 18 points. My family was not agreeing to the marriage. We then met Ram astro and he cleared the doubts of my family by clarifying that gun Milan is a part of match-making and not the only criterion. Because of Pandit ji's valuable guidance, I am today married to the girl of my choice.",
     },
   ];
+
+  const movetoallservices = () => {
+    navigate("/allservices");
+  };
 
   return (
     <>
@@ -184,7 +190,10 @@ const Home = () => {
                 {card.title}
               </h1>
               <p className="text-gray-300">{card.content}</p>
-              <button className="border mt-4 border-[#FFD700] text-white hover:bg-[#FFD700] hover:text-black py-2 px-4 rounded-full">
+              <button
+                className="border mt-4 border-[#FFD700] text-white hover:bg-[#FFD700] hover:text-black py-2 px-4 rounded-full"
+                onClick={movetoallservices}
+              >
                 Book Now
               </button>
             </div>
