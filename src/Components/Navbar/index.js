@@ -9,9 +9,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="lg:bg-gray-800 lg:p-4 lg:fixed lg:w-full lg:z-10">
+    <nav className="lg:bg-white lg:p-4 lg:fixed lg:w-full lg:z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-lg">Your Logo</div>
+        <div className="text-white font-bold text-lg">
+          <img
+              src="https://aws.astrotalk.com/assets/images/astrotalk-header-logo.webp"
+              alt="logo"
+              className="w-24"
+            />
+        </div>
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
@@ -97,7 +103,7 @@ const NavLink = ({ to, children }) => {
   return (
     <a
       href={to}
-      className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium block"
+      className="text-gray-950 hover:text-[#DC9814] px-3 py-2 rounded-md text-sm font-medium block"
     >
       {children}
     </a>
