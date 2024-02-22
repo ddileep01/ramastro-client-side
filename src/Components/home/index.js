@@ -115,11 +115,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-blue-500 p-2 md:p-8 text-white text-center md:text-left">
-        <h1 className="text-xl md:text-2xl font-bold mb-2">Testimonials</h1>
-        <p className="mb-2 md:w-96   mt-2 self-center text-sm md:text-base text-gray-400">
-          100 off in welcome offer coupon code welcome applicable on your first
-          order
+      <div className="bg-[#DC9814] text-center h-32">
+        <p className="text-white pt-16">
+          <br />
+          <strong>₹100 OFF</strong> in Welcome Offer unlocked ⚡ Applicable on your first order.
         </p>
       </div>
 
@@ -128,21 +127,21 @@ const Home = () => {
         <Slider {...carouselSettings}>
           <div>
             <img
-              src="https://res.cloudinary.com/dryli2l24/image/upload/v1700473025/about_banner_mcyzyo_qxfuth.jpg"
+              src="https://www.starstell.com/assets/images/banner-marriage.webp"
               alt="Slide 1"
               className="w-full h-96 object-cover"
             />
           </div>
           <div>
             <img
-              src="https://res.cloudinary.com/dryli2l24/image/upload/v1700473025/about_banner_mcyzyo_qxfuth.jpg"
+              src="https://www.starstell.com/assets/images/banner-job-switch.webp"
               alt="Slide 2"
               className="w-full h-96 object-cover"
             />
           </div>
           <div>
             <img
-              src="https://res.cloudinary.com/dryli2l24/image/upload/v1700473025/about_banner_mcyzyo_qxfuth.jpg"
+              src="https://www.starstell.com/assets/images/banner-love.webp"
               alt="Slide 3"
               className="w-full h-96 object-cover"
             />
